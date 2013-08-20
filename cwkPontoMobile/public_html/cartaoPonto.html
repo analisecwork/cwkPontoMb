@@ -1,0 +1,115 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- SCRIPTS -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>  
+        <script src="js/swipe.js"></script>
+        <script src="js/cartaoPonto.js"></script>
+        <script src="js/lawnchair.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+
+    </head>
+    <body>
+
+        <!-- ................................................................................................................................................. -->
+
+        <div data-role="page" id="frame_mes0" data-pagination="1">
+            <div data-role="header" data-theme="a" data-position="fixed" data-id="header">
+                <h1 id="lb_Mes0"></h1>
+            </div>
+            <div data-theme="a">
+                <label id="lb_Jornada0"></label>
+            </div>
+            <div data-role="content">
+                <div class=ui-grid-b>
+                    <div class=ui-block-a>Dia</div>
+                    <div class=ui-block-b>Marcações</div>
+                    <div class=ui-block-c>Saldo</div>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>&nbsp;</div>
+                    <div class=ui-block-c id="insertAfter0">&nbsp;</div>
+                </div>
+            </div>
+            <div data-role="footer" data-position=”fixed”>
+                <div class=ui-grid-b>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>Total Horas: </div>
+                    <div class=ui-block-c><label id="lb_TotalHoras0"></label></div>
+                </div>
+            </div><!-- /footer -->
+        </div>
+
+        <!-- ................................................................................................................................................. -->
+
+        <div data-role="page" id="frame_mes1" data-pagination="2">
+            <div data-role="header" data-theme="a" data-position="fixed" data-id="header">
+                <a href="#frame_mes0" data-icon="home" data-iconpos="notext">Home</a>
+                <h1 id="lb_Mes1"></h1>
+            </div>
+            <div data-theme="a">
+                <label id="lb_Jornada1"></label>
+            </div>
+            <div data-role="content">
+                <div class=ui-grid-b>
+                    <div class=ui-block-a>Dia</div>
+                    <div class=ui-block-b>Marcações</div>
+                    <div class=ui-block-c>Saldo</div>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>&nbsp;</div>
+                    <div class=ui-block-c id="insertAfter1">&nbsp;</div>
+                </div>
+            </div>
+            <div data-role="footer" data-position=”fixed”>
+                <div class=ui-grid-b>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>Total Horas: </div>
+                    <div class=ui-block-c><label id="lb_TotalHoras1"></label></div>
+                </div>
+            </div><!-- /footer -->
+        </div>
+
+        <!-- ................................................................................................................................................. -->
+
+        <div data-role="page" id="frame_mes2" data-pagination="3">
+            <div data-role="header" data-theme="a" data-position="fixed" data-id="header">
+                <a href="#frame_mes0" data-icon="home" data-iconpos="notext">Home</a>
+                <h1 id="lb_Mes2"></h1>
+            </div>
+            <div data-theme="a">
+                <label id="lb_Jornada2"></label>
+            </div>
+            <div data-role="content">
+                <div class=ui-grid-b id="tb_CartaoPonto">
+                    <div class=ui-block-a>Dia</div>
+                    <div class=ui-block-b>Marcações</div>
+                    <div class=ui-block-c>Saldo</div>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>&nbsp;</div>
+                    <div class=ui-block-c id="insertAfter2">&nbsp;</div>
+                </div>
+            </div>
+            <div data-role="footer" data-position=”fixed”>
+                <div class=ui-grid-b>
+                    <div class=ui-block-a>&nbsp;</div>
+                    <div class=ui-block-b>Total Horas: </div>
+                    <div class=ui-block-c><label id="lb_TotalHoras2"></label></div>
+                </div>
+            </div><!-- /footer -->
+        </div>
+
+        <!-- ................................................................................................................................................. -->
+
+    </body>
+</html>

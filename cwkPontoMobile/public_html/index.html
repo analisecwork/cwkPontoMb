@@ -1,0 +1,79 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ponto Mobile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- SCRIPTS -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>  
+        <script src="js/index.js"></script>
+        <script src="js/lawnchair.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+
+    </head>
+    <body>
+
+        <!-- ................................................................................................................................................. -->
+
+        <!-- INÍCIO DA TELA INICIAL -->
+        <div data-role="page" id="index">
+            <div data-role="header">
+                <h1>Ponto Mobile</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">	
+                <label for="txtCpf">CPF:</label>
+                <input type="text" name="name" id="txtCpf" value="" />
+                <label for="txtSenha">Senha:</label>
+                <input type="text" name="name" id="txtSenha" value=""  />
+                <br/>
+                <input type="button" data-role="button" data-icon="check" id="btLogar" value="Login">
+            </div><!-- /content -->
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div>
+        <!-- FIM DA TELA INICIAL -->
+
+        <!-- ................................................................................................................................................. -->
+
+        <!-- INÍCIO DA TELA DE DADOS -->
+        <div data-role="page" id="dadosUser">
+            <div data-role="header">
+                <h1>Ponto Mobile</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">
+                <label id="lbNomeUser"></label> <br/>
+                CPF: <label id="lbCpfUser"></label> <br/>
+                Nascimento:<label id="lbNascUser"></label><br/>
+                Pis:<label id="lbPisUser"></label><br/>
+                Função:<label id="lbFuncUser"></label><br/>
+                Empresa:<label id="lbEmpUser"></label><br/>
+
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">Atualizar Cadastro</a></li>
+                    <li id="bt_CartaoPonto" data-icon="gear">Cartão Ponto</li>
+                    <li><a href="#">Enviar Mensagem ao RH</a></li>
+                    <li><a href="#">Notificações</a></li>
+                </ul>
+
+            </div><!-- /content -->
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div>
+        <!-- FIM DA TELA DE DADOS -->
+
+
+    </body>
+</html>
