@@ -18,7 +18,8 @@ $(function() {
         {
             var prevpage = $(this).prev('div[data-role="page"]');
             if (prevpage.length > 0) {
-                $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+                $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, false, false);
+                //$.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
             }
             event.handled = true;
         }
