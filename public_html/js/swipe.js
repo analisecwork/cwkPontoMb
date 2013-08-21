@@ -17,12 +17,12 @@ $(function() {
         if (event.handled !== true) // This will prevent event triggering more then once
         {
             var prevpage = $(this).prev('div[data-role="page"]');
+               // swipe using id of next page if exists
             if (prevpage.length > 0) {
-                $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, false, false);
-                //$.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+                $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
             }
             event.handled = true;
         }
         return false;
-    });    
+    });
 });    
