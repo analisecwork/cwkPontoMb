@@ -30,7 +30,7 @@ $(function() {
        window.location.replace("jornada.html");
     });
 
-    //GetDadosCartaoPonto();
+    GetDadosCartaoPonto();
 
     function GetDadosCartaoPonto() {
         $.support.cors = true;
