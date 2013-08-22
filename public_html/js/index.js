@@ -11,7 +11,7 @@ $(function() {
         var _senha = $("#txtSenha").val();
 
         ConsumirWebServiceLogin(_cpf, _senha);
-
+        
         var store = new Lawnchair({name: 'pontoMB'}, function(store) {
             var user = {
                 key: 'userInfo',
@@ -20,7 +20,7 @@ $(function() {
             store.save(user);
         });
     });
-
+    
     function ConsumirWebServiceLogin(cpf, senha) {
         $.support.cors = true;
         $.ajax({

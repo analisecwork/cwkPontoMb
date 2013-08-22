@@ -1,28 +1,18 @@
 $(function() {
-    
-    $(document).off('swipeleft').on('swipeleft', 'div[data-role="page"]', function(event) {
-        if (event.handled !== true) // This will prevent event triggering more then once
-        {
-            var nextpage = $.mobile.activePage.next('div[data-role="page"]');
-            // swipe using id of next page if exists
-            if (nextpage.length > 0) {
-                $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
-            }
-            event.handled = true;
-        }
-        return false;
+
+    $.mobile.buttonMarkup.hoverDelay = 0;
+
+    $("#frame_mes0").swiperight(function() {
+        $.mobile.changePage("#frame_mes1", {transition: "slide", reverse: true});
+    });
+    $("#frame_mes1").swiperight(function() {
+        $.mobile.changePage("#frame_mes2", {transition: "slide", reverse: true});
+    });
+    $("#frame_mes1").swipeleft(function() {
+        $.mobile.changePage("#frame_mes0", {transition: "slide", reverse: false});
+    });
+    $("#frame_mes2").swipeleft(function() {
+        $.mobile.changePage("#frame_mes1", {transition: "slide", reverse: false});
     });
 
-    $(document).off('swiperight').on('swiperight', 'div[data-role="page"]', function(event) {
-        if (event.handled !== true) // This will prevent event triggering more then once
-        {
-            var prevpage = $(this).prev('div[data-role="page"]');
-               // swipe using id of next page if exists
-            if (prevpage.length > 0) {
-                $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
-            }
-            event.handled = true;
-        }
-        return false;
-    });
 });    
